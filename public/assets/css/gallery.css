@@ -428,12 +428,31 @@ video
   margin: 0 auto;
 
 }
-
+#word
+{
+    margin-bottom: 80px;
+}
 body{
     background-color: rgb(3, 3, 75);
 }
-/*ABOUT US SECTION*/
 
+body{
+    background-color: white;
+}
+/*ABOUT US SECTION*/
+#screen1{
+    margin: 0 auto;
+}
+
+#screen1 img{
+    margin: 0 auto;
+}
+
+#screen
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .banner
 
 {

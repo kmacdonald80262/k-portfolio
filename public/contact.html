@@ -1,49 +1,153 @@
-<form name="contact" method="post" action="send_form_email.php">
-    <table width="450px">
-    <tr>
-     <td valign="top">
-      <label for="first_name">First Name *</label>
-     </td>
-     <td valign="top">
-      <input  type="text" name="first_name" maxlength="50" size="30">
-     </td>
-    </tr>
-    <tr>
-     <td valign="top">
-      <label for="last_name">Last Name *</label>
-     </td>
-     <td valign="top">
-      <input  type="text" name="last_name" maxlength="50" size="30">
-     </td>
-    </tr>
-    <tr>
-     <td valign="top">
-      <label for="email">Email Address *</label>
-     </td>
-     <td valign="top">
-      <input  type="text" name="email" maxlength="80" size="30">
-     </td>
-    </tr>
-    <tr>
-     <td valign="top">
-      <label for="telephone">Telephone Number</label>
-     </td>
-     <td valign="top">
-      <input  type="text" name="telephone" maxlength="30" size="30">
-     </td>
-    </tr>
-    <tr>
-     <td valign="top">
-      <label for="comments">Comments *</label>
-     </td>
-     <td valign="top">
-      <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-     </td>
-    </tr>
-    <tr>
-     <td colspan="2" style="text-align:center">
-      <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
-     </td>
-    </tr>
-    </table>
-    </form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+		 
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+			
+          <ul class="nav navbar-nav navbar-right">
+			<li><a href="art.html">Art</a></li>
+			<li><a href="photos.html">Photography</a></li>
+			<li><a href="feature.html">Featured</a></li>
+			<li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+   
+
+<style>
+body 
+* {box-sizing: border-box;}
+label{
+  color:  rgb(3, 3, 75);
+}
+form{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 8px solid  rgb(3, 3, 75);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(3, 3, 75);
+  color: white;
+  padding: 12px 20px;
+  border: yellow;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  
+  <form action="send_form_email.php.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Email Address">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="canada">Canada</option>
+      <option value="australia">Other</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div id="footerwrap">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-lg-6">
+        <p><b>ARTIST & DESIGNER</b></p>
+      </div>
+      <div id="social">
+      <div class="col-lg-2">
+        <a href="https://www.facebook.com/kathleen.macdonald.54966?ref=bookmarks"><i class="fa fa-facebook"></i></a>
+      </div>
+      <div class="col-lg-2">
+        <a href="http://www.instagram.com/itsjustkats/"><i class="fa fa-instagram"></i></a>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+</div><! --/footerwrap -->
+
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

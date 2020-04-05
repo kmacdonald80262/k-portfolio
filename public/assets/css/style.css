@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #workwrap {	
-	background: url(../img/work.jpg) no-repeat center top;
+	background-color: #6d89b2;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
@@ -188,8 +188,13 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+
+
+#link {
+	color: yellow;	
+}
 #workwrap h1 {
-	color:#ffffff;
+	color: #92bbab;
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
